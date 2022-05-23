@@ -1,0 +1,358 @@
+/* --- font --- */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* 
+font-family: 'Amaranth', sans-serif;
+*/
+
+body {
+  font-family: 'Amaranth', sans-serif;
+}
+
+/* --- logo --- */
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* ---- navbar section ---- */
+.link-navbar a {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.link-navbar a:hover {
+  color: #FC2964;
+}
+
+/* ---- home section ---- */
+.home-man {
+  width: 80%;
+  transition: .5s all;
+}
+
+.home-man:hover {
+  transform: scale(105%);
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.home-text {
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+/* ---- card css ---- */
+.contact-card {
+  background: #4A0D3A;
+  height: 180px;
+  width: 100%;
+  border-radius: 5px;
+  color: #292929;
+  padding: 10px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.contact-icon {
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  background: #fc2964;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contact-type {
+  font-weight: bold;
+  color: #fc2964;
+  font-size: 14px;
+}
+
+.contact-info {
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact-card:hover {
+  transform: scale(105%);
+}
+
+/* --- about section css --- */
+.about-list {
+  letter-spacing: 1px;
+}
+
+.transform-up {
+  transition: .6s all;
+}
+
+.transform-up:hover {
+  transform: scale(107%);
+}
+
+/* ---- skill ---- */
+/* skill css moved to \partials\_skill.css */
+
+/* --- portfolio --- */
+
+.ctg-link {
+  padding-bottom: 3px;
+  color: #fff;
+  transition: .3s all;
+  text-decoration: none;
+  position: relative;
+}
+
+
+.ctg-link::before {
+  position: absolute;
+  content: "";
+  background: #FC2964;
+  height: 3px;
+  width: 0;
+  bottom: 0;
+  opacity: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.ctg-link:hover::before {
+  opacity: 100;
+  width: 100%;
+}
+
+.ctg-link:hover {
+  color: #FC2964;
+}
+
+.portfolio a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* portfolio image */
+.pt-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.pt-card::before {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  transition: .3s all;
+}
+
+
+.pt-card:hover::before {
+  opacity: .7;
+}
+
+.pt-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 25px;
+  opacity: 0;
+  transition: .3s all;
+}
+
+.pt-card:hover .overlay {
+  opacity: 1;
+}
+
+.mt-02 {
+  margin-top: -8px;
+}
+
+/* --- services --- */
+
+
+.services-card {
+  background: #4A0D3A;
+  border-radius: 5px;
+  color: #292929;
+  transition: .3s;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0px 0px 13px 6px rgba(35, 21, 56, 0.92);
+  overflow: hidden;
+}
+
+.services-image {
+  transition: .3s all;
+}
+
+.services-card:hover .services-image {
+  transform: scale(105%);
+}
+
+.fa-star {
+  color: #F7CB03;
+  margin-right: px;
+}
+
+.ratings {
+  position: absolute;
+  bottom: 15px;
+}
+
+/* team member css */
+
+.team-card {
+  height: 400px;
+  width: 290px;
+  background: #4A0D3A;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+.team-card:hover {
+  transform: scale(105%);
+}
+
+.team-image {
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FC2964;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.designation {
+  margin-top: -5px;
+}
+
+.stars {
+  margin: 20px 0;
+}
+
+.social i {
+  color: #fff;
+  background: #FC2964;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  line-height: 35px;
+  margin: 0 3px;
+  transition: .3s all;
+}
+
+.social i:hover {
+  background: #fff;
+  color: #FC2964;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+/* --- testimonial --- */
+
+.testimonial-box {
+  padding: 12px 10px 10px 15px;
+  height: 130px;
+  width: auto;
+}
+
+.testimonial-box h5 {
+  font-size: 16px;
+}
+
+.testimonial-box p {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.testimonial-ratings {
+  font-size: 12px;
+}
+
+.img-testimonial {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #FC2964;
+  margin-right: 8px;
+}
+
+/* --- message css --- */
+
+.message-input {
+  width: 100%;
+  background: rgb(222, 222, 222);
+  outline: none;
+  border: 1px solid #fc2964;
+  padding: 4px 15px;
+}
+
+.message-big {
+  width: 100%;
+  height: 60px;
+  background: rgb(222, 222, 222);
+  outline: none;
+  border: 1px solid #fc2964;
+  padding: 4px 15px;
+}
+
+.msg-submit {
+  margin-top: 20px;
+  width: 100%;
+  background: #4A0D3A;
+  color: #fff;
+  outline: none;
+  border: 1px solid #FC2964;
+  padding: 4px 15px;
+}
+
+/* --- footer --- */
+.footer {
+  background: #1F1535;
+}
+
+.footer-list-none {
+  list-style: none;
+}
+
+.footer-list-none li a {
+  margin-left: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s all;
+}
+
+.footer-list-none li a:hover {
+  color: #FC2964;
+  text-decoration: underline;
+}
+
+.footer-image {
+  width: 140px;
+  height: auto;
+}
+
+.about {
+  font-size: 14px;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: .3s all;
+}
+
+.footer-link:hover {
+  color: #FC2964;
+  text-decoration: underline;
+}

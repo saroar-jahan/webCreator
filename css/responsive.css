@@ -1,0 +1,33 @@
+@media (max-width: 992px) {
+  .contact-card {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-info {
+    font-size: 20px;
+  }
+
+  .services-card {
+    height: 395px;
+    width: auto;
+  }
+
+  .message-section {
+    max-width: 60%;
+    margin: auto !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .about-man-pic {
+    margin-bottom: 25px;
+  }
+
+  .services-card {
+    height: 350px;
+    width: auto;
+  }
+}
